@@ -3,10 +3,6 @@ const admin = require("firebase-admin");
 
 admin.initializeApp(functions.config().firebase);
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-
 /**
  * Sends to topic
  * @param {String} topic
@@ -33,11 +29,7 @@ function getPlantFromID(id) {
 exports.checkValues = functions.firestore
     .document("plants/{id}")
     .onCreate((snap, context) => {
-      // Get an object representing the document
-      // e.g. {'name': 'Marie', 'age': 66}
       const newValue = snap.data();
-
-      // access a particular field as you would any JS property
       const moisture = newValue.moisture;
       const voltage = newValue.battery;
       const id = newValue.id;
@@ -64,7 +56,5 @@ exports.checkValues = functions.firestore
         };
         sendToTopic(TOPIC, payload);
       }
-
-      // perform desired operations ...
     });
 

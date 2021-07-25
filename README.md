@@ -6,3 +6,6 @@ As part of this project, I have Arduino soil sensors that push data to a Raspber
 ## Deploy updates:
 
 Use command: `firebase deploy --only functions`
+
+### Related Repos
+Soil Moisture Sensor Transmitter and Receiver: [https://github.com/DaveBben/Soil_Moisture_Transmitter_Reciver](https://github.com/DaveBben/Soil_Moisture_Transmitter_Reciver)

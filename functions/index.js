@@ -36,7 +36,8 @@ exports.checkValues = functions.firestore
 
       const TOPIC = "plants";
 
-      if (moisture > 1920) {
+      // If it's greater than 2700 then it's probably a false reading
+      if (moisture > 1920 && moisture < 2700) {
         const payload = {
           notification: {
             title: `${getPlantFromID(id)} needs water`,

@@ -9,3 +9,5 @@ Use command: `firebase deploy --only functions`
 
 ### Related Repos
 Soil Moisture Sensor Transmitter and Receiver: [https://github.com/DaveBben/Soil_Moisture_Transmitter_Reciver](https://github.com/DaveBben/Soil_Moisture_Transmitter_Reciver)
+
+Android Notification App: [https://github.com/DaveBben/Soil_Moisture_Notify_App](https://github.com/DaveBben/Soil_Moisture_Notify_App)

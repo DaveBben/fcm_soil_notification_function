@@ -1,0 +1,7 @@
+{
+  "firebase": {
+    "projectId": "soil-moisture-sensors",
+    "storageBucket": "soil-moisture-sensors.appspot.com",
+    "locationId": "us-central"
+  }
+}
